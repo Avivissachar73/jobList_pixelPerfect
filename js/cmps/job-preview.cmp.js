@@ -6,9 +6,9 @@ export default function jobPreview(job) {
     
     // <pre>${JSON.stringify(job, null, 2)}</pre>
     return `
-        <section class="job-preview width-all flex align-center space-between wrap">
+        <section class="job-preview width-all flex space-between">
             <div class="flex align-center wrap">
-                <img src="${job.img}"/>
+                <img class="job-img" src="${job.img}"/>
                 <div class="info flex column space-between">
                     <div class="flex align-center titles">
                         <h3 class="comp-name">${job.companyName}</h3>
