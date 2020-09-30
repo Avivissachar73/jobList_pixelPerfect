@@ -8,5 +8,5 @@
 /* CMPS */
 @import './cmps/job-list.css';
 @import './cmps/job-preview.css';
-@import './cmps/tag-editor.css';
+@import './cmps/job-filter.css';
 @import './cmps/tag-list.css';

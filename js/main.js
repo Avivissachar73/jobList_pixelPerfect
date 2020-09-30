@@ -1,18 +1,21 @@
 import appHeader from './cmps/app-header.cmp.js';
 import jobList from './cmps/job-list.cmp.js';
-import tagEditor from './cmps/tag-editor.cmp.js';
+import jobFilter from './cmps/job-filter.cmp.js';
 
 import { jobService } from './services/job.service.js';
 
+// let filterTags = ['Frontend', 'Senior', 'HTML', 'CSS', 'JavaScript', 'Junior', 'React', 'Scss'];
+let filterTags = ['Frontend', 'Senior', 'HTML', 'CSS'];
+
 function render() {
-    const jobs = jobService.query();
+    const jobs = jobService.query(filterTags);
     console.log(jobs);
     const RootCmp = (() => {
         return `
             <div>
                 ${appHeader()}
                 <main class="app-main container">
-                    ${tagEditor()}
+                    ${jobFilter(filterTags)}
                     ${jobList(jobs)}
                 </main>
             </div>
@@ -23,9 +26,21 @@ function render() {
     document.querySelector(selector).innerHTML = RootCmp;
 }
 
-window.onRemoveTag = function onRemoveTag(jobId, tag) {
-    console.log('wowowowing');
-    jobService.removeTag(jobId, tag);
+
+window.onRemoveFilter = function onRemoveFilter(ev, tag) {
+    console.log(ev);
+    ev.stopPropagation();
+    filterTags = filterTags.filter(curr => curr !== tag);
+    render();
+}
+window.onAddTofilter = function onAddTofilter(tag, ev) {
+    if (!filterTags.includes(tag)) {
+        filterTags.push(tag);
+        render();
+    }
+}
+window.onClearFilter = function onClearFilter() {
+    filterTags = [];
     render();
 }
 

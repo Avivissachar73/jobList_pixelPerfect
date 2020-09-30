@@ -3,13 +3,20 @@ import { utils } from "./utils.service.js";
 export const jobService = {
     query,
     get,
-    removeTag
+    // removeTag
 }
 
 const gJobs = createJobs();
 
-function query() {
-    return gJobs;
+function query(filterTags) {
+    if (!filterTags || !filterTags.length) return gJobs;
+    return gJobs.filter(curr => {
+        let isExist = false;
+        filterTags.forEach(tag => {
+            if (curr.tags.includes(tag)) isExist = true;
+        });
+        return isExist;
+    });
 }
 
 function get(id) {
@@ -17,12 +24,12 @@ function get(id) {
     return query().find(job => job.id === id);
 }
 
-function removeTag(jobId, tag) {
-    const job = get(jobId);
-    const tags = job.tags;
-    const idx = tags.findIndex(curr => curr === tag);
-    tags.splice(idx, 1);
-}
+// function removeTag(jobId, tag) {
+//     const job = get(jobId);
+//     const tags = job.tags;
+//     const idx = tags.findIndex(curr => curr === tag);
+//     tags.splice(idx, 1);
+// }
 
 function createJobs() {
     const now = Date.now();

@@ -59,7 +59,7 @@ export default (() => {
                     </div>
                 </div>
                 <div class="costume-hr"></div>
-                ${tagList(job.id, job.tags)}
+                ${tagList(job.tags)}
             </section>
         `;
     }
