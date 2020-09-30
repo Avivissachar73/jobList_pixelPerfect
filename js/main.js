@@ -8,7 +8,7 @@ const RootCmp = (() => {
     return `
         <div>
             ${appHeader()}
-            <main>
+            <main class="app-main container">
                 ${jobList(jobs)}
             </main>
         </div>

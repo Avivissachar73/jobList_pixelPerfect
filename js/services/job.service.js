@@ -10,20 +10,22 @@ function query() {
 
 function createJobs() {
     const now = Date.now();
-    const hr24 = 1000*60*60*24
+    const hr24 = 1000*60*60*24;
     return [
-        createJob('Photosnap', 'Senior Frontend Developer', 'https://api-lunacy.icons8.com/api/assets/a4934ba9-510c-442b-9492-ae53c8b5826f/Oval.png', now-hr24, ['Frontend', 'Senior', 'HTML', 'CSS', 'JavaScript'], ['USA']),
+        createJob('Photosnap', 'Senior Frontend Developer', 'https://api-lunacy.icons8.com/api/assets/a4934ba9-510c-442b-9492-ae53c8b5826f/Oval.png', now-hr24, ['Frontend', 'Senior', 'HTML', 'CSS', 'JavaScript'], ['USA'], true, 'Full Time'),
     ];
 }
 
-function createJob(companyName = '', jobTitle = '', img = '', createdAt, tags = [], availableAt = []) {
+function createJob(companyName = '', title = '', img = '', createdAt, tags = [], availableAt = [], isFeatured = false, status = 'Full Time') {
     return {
         id: utils.getRandomId(),
         companyName,
-        jobTitle,
+        title,
         createdAt: createdAt || Date.now(),
         tags,
         img,
-        availableAt
+        availableAt,
+        isFeatured,
+        status
     };
 }
