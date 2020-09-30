@@ -1,4 +1,5 @@
 import appHeader from './cmps/app-header.cmp.js';
+import jobList from './cmps/job-list.cmp.js';
 
 const jobs = [];
 
@@ -7,7 +8,7 @@ const RootCmp = (() => {
         <div>
             ${appHeader()}
             <main>
-                <h1>WOWOWOWOW</h1>
+                ${jobList(jobs)}
             </main>
         </div>
     `
