@@ -1,22 +1,13 @@
 .tag-editor {
     position: fixed;
     top: 110px;
-    /* left: 25px; */
-    /* height: 70px; */
     min-height: 70px;
     background-color: #fff;
-    /* width: calc(100% - 50px); */
     width: 1060px;
     border-radius: 5px;
     padding: 0 40px;
     display: none;
     z-index: 5;
-}
-
-.tag-editor .tag-list {
-    min-height: unset;
-    /* width: fit-content; */
-    /* display: inline-block; */
 }
 
 .tag-editor .tag-list li {
@@ -57,7 +48,6 @@
     border: unset;
     border-radius: unset;
 } .tag-editor .close-btn:hover {
-    /* box-shadow: 0 4px 2px -2px; */
     box-shadow: 0 4px 0px -3px;
 }
 
@@ -65,5 +55,10 @@
 @media (max-width: 1110px) {
     .tag-editor {
         width: calc(100% - 50px);
+    }
+}
+@media (max-width: 600px) {
+    .tag-editor {
+        border: 1px solid #2B3939;
     }
 }
