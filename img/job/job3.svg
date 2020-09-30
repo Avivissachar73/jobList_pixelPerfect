@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="89px" height="89px" viewBox="0 0 89 89" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <linearGradient x1="0" y1="0" x2="1" y2="1" id="gradient_1">
+      <stop offset="0" stop-color="#5141E2" />
+      <stop offset="1" stop-color="#DE39FF" />
+    </linearGradient>
+    <linearGradient x1="0" y1="0" x2="1" y2="1" id="gradient_2">
+      <stop offset="0" stop-color="#5141E2" />
+      <stop offset="1" stop-color="#DE39FF" stop-opacity="0" />
+    </linearGradient>
+    <filter filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB" id="filter_1">
+      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+      <feOffset dx="0" dy="0" />
+      <feGaussianBlur stdDeviation="17.5" />
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.047058824 0" />
+      <feBlend mode="normal" in2="shape" result="effect0_innerShadow" />
+    </filter>
+  </defs>
+  <g id="Group-9" transform="translate(0.5 0.5)">
+    <path d="M44 88C68.3005 88 88 68.3005 88 44C88 19.6995 68.3005 0 44 0C19.6995 0 0 19.6995 0 44C0 68.3005 19.6995 88 44 88Z" id="Oval" fill="#4F1181" fill-rule="evenodd" stroke="none" filter="url(#filter_1)" />
+    <g id="Group-9" transform="translate(10 40)">
+      <path d="M2.2039 7.80734L2.61736 6.57057L5.26341 6.57057L5.67474 7.80734L7.93943 7.80734L4.94273 0.19244L2.93239 0.19244L0 7.80734L2.2039 7.80734ZM4.76155 4.92891L3.11827 4.92891L3.93623 2.56927L4.76155 4.92891ZM11.8182 8L11.8182 7.99989C13.8065 7.99989 15.3309 6.64074 15.6147 4.63845L13.5113 4.63845C13.3021 5.48469 12.651 6.03525 11.8227 6.03525C10.7656 6.03525 9.9903 5.18074 9.9903 4.0062C9.9903 2.82709 10.7656 1.96008 11.8227 1.96008C12.6083 1.96008 13.2533 2.46712 13.5095 3.24808L15.5933 3.24808C15.2899 1.31727 13.7746 0 11.8182 0C9.54602 0 7.8491 1.71586 7.8491 4.00631C7.8491 6.28414 9.54602 8 11.8182 8ZM20.1107 8L20.1107 7.99989C22.0991 7.99989 23.6234 6.64074 23.9072 4.63845L21.8038 4.63845C21.5946 5.48469 20.9435 6.03525 20.1152 6.03525C19.0581 6.03525 18.2828 5.18074 18.2828 4.0062C18.2828 2.82709 19.0581 1.96008 20.1152 1.96008C20.9008 1.96008 21.5458 2.46712 21.8021 3.24808L23.8858 3.24808C23.5824 1.31727 22.0671 0 20.1107 0C17.8385 0 16.1416 1.71586 16.1416 4.00631C16.1416 6.28414 17.8385 8 20.1107 8ZM28.5448 8L28.5448 7.99989C30.9385 7.99989 32.6448 6.33353 32.6448 4C32.6448 1.66636 30.9385 3.31983e-07 28.5448 3.31983e-07C26.145 3.31983e-07 24.4325 1.67267 24.4325 4C24.4325 6.32733 26.145 8 28.5448 8ZM28.5448 6.04797C27.4086 6.04786 26.5739 5.18553 26.5739 4.00011C26.5739 2.81469 27.4086 1.95235 28.5448 1.95235C29.681 1.95235 30.5035 2.80849 30.5035 4.00022C30.5035 5.19184 29.681 6.04797 28.5448 6.04797ZM36.807 7.99989C38.71 7.99989 40.0657 6.73506 40.0657 4.86157L40.0657 0.192439L37.9638 0.192439L37.9638 4.82241C37.9638 5.56671 37.4937 6.04765 36.807 6.04765C36.1202 6.04765 35.65 5.56671 35.65 4.82241L35.65 0.192439L33.5481 0.192439L33.5481 4.86157C33.5481 6.73506 34.9038 7.99989 36.807 7.99989ZM43.3582 7.80734L43.3582 3.67484L46.3239 7.80734L48.0247 7.80734L48.0247 0.19244L46.0318 0.19244L46.0318 4.18754L43.1653 0.19244L41.3653 0.19244L41.3653 7.80734L43.3582 7.80734ZM52.9722 7.80734L52.9722 2.08137L55 2.08137L55 0.19244L48.8786 0.19244L48.8786 2.08137L50.9066 2.08137L50.9066 7.80734L52.9722 7.80734Z" transform="translate(13 0)" id="ACCOUNT" fill="#FFFFFF" stroke="none" />
+      <g id="Group-8">
+        <path d="M7.42063 7.95322L3.71032 0L0 7.95322L7.42063 7.95322Z" id="Path-2" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+        <path d="M7.42063 7.95322L3.71032 0L0 7.95322L7.42063 7.95322Z" transform="translate(3.4920635 0)" id="Path-2-Copy" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+      </g>
+    </g>
+  </g>
+</svg>

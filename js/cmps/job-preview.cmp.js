@@ -1,3 +1,5 @@
+import tagList from './tag-list.cmp.js';
+
 export default (() => {
     function formatTime(timestamp) {
         const now = Date.now();
@@ -57,9 +59,7 @@ export default (() => {
                     </div>
                 </div>
                 <div class="costume-hr"></div>
-                <ul class="tag-list clean-list flex align-center wrap">
-                    ${job.tags.map(tag => `<li class="flex-center"><p>${tag}</p></li>`).join('')}
-                </ul>
+                ${tagList(job.id, job.tags)}
             </section>
         `;
     }

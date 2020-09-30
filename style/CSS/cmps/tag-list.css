@@ -1,0 +1,28 @@
+
+.tag-list {
+    min-height: 90px;
+}
+.tag-list li {
+    height: 30px;
+    background-color: #EEF6F6;
+    color: #5CA5A5;
+
+    border-radius: 5px;
+    padding: 0 10px;
+} .tag-list li:hover {
+    background-color: #5CA5A5;
+    color: #fff;
+    cursor: pointer;
+}
+.tag-list li:not(:last-child) {
+    margin-right: 15px;
+}
+.tag-list li {
+    /* margin: 5px 15px; */
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+}
+.tag-list li p {
+    font-size: 0.8125rem;
+}
+
