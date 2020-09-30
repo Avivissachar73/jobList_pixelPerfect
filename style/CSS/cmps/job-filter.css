@@ -49,5 +49,6 @@
     border: unset;
     border-radius: unset;
 } .job-filter .clear-btn:hover {
-    box-shadow: 0 4px 0px -3px;
+    /* box-shadow: 0 4px 0px -3px; */
+    text-decoration: underline;
 }

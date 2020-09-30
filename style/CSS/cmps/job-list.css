@@ -1,4 +1,4 @@
 /* .job-list li { */
-.job-list li:not(:last-child) {
+.job-list > li:not(:last-child) {
     margin-bottom: 40px;
 }
