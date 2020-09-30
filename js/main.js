@@ -27,22 +27,23 @@ function render() {
 }
 
 
-window.onRemoveFilter = function onRemoveFilter(ev, tag) {
+window.onRemoveFilter = (ev, tag) => {
     console.log(ev);
     ev.stopPropagation();
     filterTags = filterTags.filter(curr => curr !== tag);
     render();
 }
-window.onAddTofilter = function onAddTofilter(tag, ev) {
+window.onAddTofilter = (tag) => {
     if (!filterTags.includes(tag)) {
         filterTags.push(tag);
         render();
     }
 }
-window.onClearFilter = function onClearFilter() {
+window.onClearFilter = () => {
     filterTags = [];
     render();
 }
+
 
 const appTitle = 'Job List';
 document.title = appTitle;

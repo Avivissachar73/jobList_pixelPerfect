@@ -6,7 +6,7 @@ export default function jobFilter(filterTags) {
             ${tagList(filterTags, removeTagBtn)}
             <button class="clear-btn" onclick="onClearFilter()">Clear</button>
         </section>
-        `;
+    `;
 }
 
 function removeTagBtn(tag) {
