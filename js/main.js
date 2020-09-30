@@ -1,7 +1,8 @@
 import appHeader from './cmps/app-header.cmp.js';
 import jobList from './cmps/job-list.cmp.js';
+import { jobService } from './services/job.service.js';
 
-const jobs = [];
+const jobs = jobService.query();
 
 const RootCmp = (() => {
     return `
