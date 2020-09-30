@@ -1,10 +1,30 @@
 .job-preview {
     background-color: #fff;
     min-height: 150px;
-    padding: 30px;
+    padding: 40px;
+    /* padding: 30px; */
     border-radius: 5px;
     position: relative;
     align-items: center;
+}
+
+.side-line {
+    color: #5CA5A5;
+    background-color: #5CA5A5;
+    border: 3px solid #5CA5A5;
+    border-top-left-radius: 2.5px;
+    border-bottom-left-radius: 2.5px;
+
+
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.job-preview .costume-hr {
+    display: none;
 }
 
 .job-preview .job-img {
@@ -14,7 +34,7 @@
 }
 
 .job-preview .info {
-    height: 90px;
+    min-height: 90px;
 }
 
 .job-preview .comp-name {
@@ -46,6 +66,7 @@
 
 .job-preview .about >* {
     font-size: 0.9375rem;
+    font-family: spartan-medium;
     color: #7C8F8F;
 }
 .job-preview .about >*:not(:last-child) {
@@ -64,7 +85,7 @@
 
 
 .job-preview .tag-list {
-    height: 90px;
+    min-height: 90px;
 }
 .job-preview .tag-list li {
     height: 30px;
@@ -81,6 +102,11 @@
 .job-preview .tag-list li:not(:last-child) {
     margin-right: 15px;
 }
+.job-preview .tag-list li {
+    /* margin: 5px 15px; */
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+}
 .job-preview .tag-list li p {
     font-size: 0.8125rem;
 }
@@ -93,8 +119,24 @@
         /* padding: unset; */
         align-items: flex-start;
     }
-    .job-preview >*:not(:last-child) {
-        margin-bottom: 30px;
+    /* .job-preview >*:not(:last-child) {
+        margin-bottom: 10px;
+    } */
+
+    /* .job-preview > :first-child::after {
+        content: '';
+        border-bottom: 3px solid black;
+        width: 100%;
+    } */
+    .job-preview .costume-hr {
+        display: block;
+        background-color: #EDF0F0;
+        color: #EDF0F0;
+        /* border-color: #EDF0F0; */
+        border: 1px solid #EDF0F0;
+        border-radius: 3px;
+        width: 100%;
+        margin: 20px 0;
     }
 
     .job-preview .job-img {
@@ -117,5 +159,9 @@
     
     .job-preview .about >* {
         font-size: 0.8125rem;
+    }
+
+    .job-preview .tag-list {
+        min-height: unset;
     }
 }

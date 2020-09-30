@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'spartan';
+    src: url(../../fonts/spartan/Spartan-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'spartan-medium';
+    src: url(../../fonts//spartan/Spartan-Medium.ttf);
+}

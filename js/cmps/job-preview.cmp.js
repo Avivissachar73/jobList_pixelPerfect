@@ -7,10 +7,11 @@ export default function jobPreview(job) {
     // <pre>${JSON.stringify(job, null, 2)}</pre>
     return `
         <section class="job-preview width-all flex space-between">
+            <div class="side-line"></div>
             <div class="flex align-center wrap">
                 <img class="job-img" src="${job.img}"/>
-                <div class="info flex column space-between">
-                    <div class="flex align-center titles">
+                <div class="info flex column space-between wrap">
+                    <div class="flex align-center titles wrap">
                         <h3 class="comp-name">${job.companyName}</h3>
                         <div class="tags flex align-center wrap">
                             ${isNew && `<h3 class="flex-center">NEW!</h3>` || ''}
@@ -25,6 +26,7 @@ export default function jobPreview(job) {
                     </div>
                 </div>
             </div>
+            <div class="costume-hr"></div>
             <ul class="tag-list clean-list flex align-center wrap">
                 ${job.tags.map(tag => `<li class="flex-center"><p>${tag}</p></li>`).join('')}
             </ul>

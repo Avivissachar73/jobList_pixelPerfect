@@ -1,4 +1,5 @@
 /* BASE */
+@import './base/fonts.css';
 @import './base/base.css';
 @import './base/helpers.css';
 @import './base/layout.css';
