@@ -31,6 +31,7 @@
     height: 90px;
     width: 90px;
     margin-right: 30px;
+    /* margin-bottom: 15px; */
 }
 
 .job-preview .info {
@@ -85,6 +86,15 @@
 }
 
 
+
+@media (max-width: 945px) {
+    /* body {
+        background-color: black !important;
+    } */
+    .job-preview .job-img {
+        margin-bottom: 15px;
+    }
+}
 
 @media (max-width: 800px) {
     .job-preview {
