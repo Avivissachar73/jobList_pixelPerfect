@@ -14,13 +14,14 @@
     border: 3px solid #5CA5A5;
     border-top-left-radius: 2.5px;
     border-bottom-left-radius: 2.5px;
-
-
     height: 100%;
-
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
+}
+.job-preview.stronger .side-line {
+    display: block;
 }
 
 .job-preview .costume-hr {
@@ -40,7 +41,9 @@
 .job-preview .comp-name {
     font-size: 0.875rem;
     margin-right: 10px;
+    color: #7EB8B8;
 }
+
 .job-preview .tags >* {
     font-size: 0.6875rem;
     color: #ffffff;
@@ -62,18 +65,21 @@
 .job-preview .job-title {
     font-size: 1.125rem;
     color: #2B3939;
+} .job-preview .job-title:hover {
+    color: #5CA5A5;
+    cursor: pointer;
 }
 
-.job-preview .about >* {
+.job-preview .more-info >* {
     font-size: 0.9375rem;
     font-family: spartan-medium;
     color: #7C8F8F;
 }
-.job-preview .about >*:not(:last-child) {
+.job-preview .more-info >*:not(:last-child) {
     margin-right: 10px;
     position: relative;
 }
-.job-preview .about >*:not(:last-child)::after {
+.job-preview .more-info >*:not(:last-child)::after {
     margin-left: 7.5px;
     opacity: 0.5;
     /* font-weight: 900; */
@@ -157,7 +163,7 @@
     }
 
     
-    .job-preview .about >* {
+    .job-preview .more-info >* {
         font-size: 0.8125rem;
     }
 

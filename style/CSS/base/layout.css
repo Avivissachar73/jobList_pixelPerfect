@@ -3,7 +3,7 @@ body {
 }
 
 .app-header {
-    min-height: 80px;
+    min-height: 150px;
     background-image: url(../../../img/header.svg);
 }
 
