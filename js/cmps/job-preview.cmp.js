@@ -6,21 +6,28 @@ export default function jobPreview(job) {
     
     // <pre>${JSON.stringify(job, null, 2)}</pre>
     return `
-        <section class="flex align-center">
-            <img src="${job.img}"/>
-            <div>
-                <div class="flex align-center titles">
-                    <h3>${job.companyName}</h3>
-                    ${isNew && `<h3 class="stronger">NEW!</h3>` || ''}
-                    ${job.isFeatured && `<h3 class="stronger">FEATURED</h3>` || ''}
-                </div>
-                <h2>${job.title}</h2>
-                <div class="flex align-center">
-                    <h4>${formatTime(job.createdAt)}</h4>
-                    <h4>${job.status}</h4>
-                    <h4>${job.availableAt.length > 1 ? 'Worldwide' : job.availableAt.length ? job.availableAt[0] : ''}</h4>
+        <section class="job-preview width-all flex align-center space-between wrap">
+            <div class="flex align-center wrap">
+                <img src="${job.img}"/>
+                <div class="info flex column space-between">
+                    <div class="flex align-center titles">
+                        <h3 class="comp-name">${job.companyName}</h3>
+                        <div class="tags flex align-center wrap">
+                            ${isNew && `<h3 class="flex-center">NEW!</h3>` || ''}
+                            ${job.isFeatured && `<h3 class="flex-center">FEATURED</h3>` || ''}
+                        </div>
+                    </div>
+                    <h2 class="job-title">${job.title}</h2>
+                    <div class="about flex align-center">
+                        <p>${formatTime(job.createdAt)}</p>
+                        <p>${job.status}</p>
+                        <p>${job.availableAt.length > 1 ? 'Worldwide' : job.availableAt.length ? job.availableAt[0] : ''}</p>
+                    </div>
                 </div>
             </div>
+            <ul class="tag-list clean-list flex align-center wrap">
+                ${job.tags.map(tag => `<li class="flex-center"><p>${tag}</p></li>`).join('')}
+            </ul>
         </section>
     `;
 }

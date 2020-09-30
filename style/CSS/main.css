@@ -1,4 +1,9 @@
 /* BASE */
-@import './base.css';
-@import './helpers.css';
-@import './layout.css';
+@import './base/base.css';
+@import './base/helpers.css';
+@import './base/layout.css';
+
+
+/* CMPS */
+@import './cmps/job-list.css';
+@import './cmps/job-preview.css';
